@@ -1,3 +1,4 @@
+
 import requests as r
 
 user = input("user name : ")
@@ -16,6 +17,11 @@ if end.status_code == 200:
     print(f"followers : {data['followers']}")
     print(f"following : {data['following']}")
     print(f"public repos : {data['public_repos']}")
+    print(f"bio : {data['bio']}")
+    print(f"location : {data['location']}")
+    print(f"company : {data['company']}")
+    print(f"public gists : {data['public_gists']}")
+    print(f"profile : {data['html_url']}")
 
 elif end.status_code == 404:
     print("User not found")
