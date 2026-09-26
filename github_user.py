@@ -1,5 +1,5 @@
 
-    import requests as r
+import requests as r
 
 user = input("user name : ")
 
