@@ -1,4 +1,5 @@
-import requests as r
+
+    import requests as r
 
 user = input("user name : ")
 
@@ -13,9 +14,10 @@ try:
         data = end.json()
 
         print(f"login : {data['login']}")
-        name= data['name'] if data['name'] is
-not None else "Not available"
-        print(f"name : {data['name']}")
+
+        name = data['name'] if data['name'] is not None else "Not available"
+        print(f"name : {name}")
+
         print(f"followers : {data['followers']}")
         print(f"following : {data['following']}")
         print(f"public repos : {data['public_repos']}")
