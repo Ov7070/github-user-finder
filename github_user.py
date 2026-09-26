@@ -13,6 +13,8 @@ try:
         data = end.json()
 
         print(f"login : {data['login']}")
+        name= data['name'] if data['name'] is
+not None else "Not available"
         print(f"name : {data['name']}")
         print(f"followers : {data['followers']}")
         print(f"following : {data['following']}")
